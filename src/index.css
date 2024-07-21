@@ -1,0 +1,173 @@
+:root {
+  font-family: 'Karla', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  background-color: #F5F7FB;
+  color: #293264;
+}
+
+body,
+h1,
+h3,
+p,
+fieldset,
+input {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* Background */
+
+.top-right-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
+  z-index: -1;
+}
+
+.bottom-left-image {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  z-index: -1;
+}
+
+/* Home Screen */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+}
+
+.home__info {
+  text-align: center;
+}
+
+.home__info h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.home__info p {
+  font-size: 1.25rem;
+  max-width: 600px;
+}
+
+.home button {
+  color: #F5F7FB;
+  background: #4D5B9E;
+  border-radius: 15px;
+  padding: 1rem 3rem;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.home button:hover {
+  background: #707bb1;
+}
+
+.home button:active {
+  background: #3d487e;
+  transform: translateY(1px);
+}
+
+
+/* Quiz */
+
+.quiz-container {
+  padding: 40px 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 30px;
+  border-bottom: .8px solid #DBDEF0
+}
+
+fieldset p {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.radio-option input {
+  visibility: hidden;
+  width: 0;
+}
+
+.radio-option label {
+  border: 0.8px solid #4D5B9E;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.radio-option label:has(input[type="radio"]:checked) {
+  background: #D6DBF5;
+  border: 0.8px solid #D6DBF5;
+}
+
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.submit-btn {
+  max-width: 240px;
+  width: fit-content;
+  background: #4D5B9E;
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  font-size: 1.25rem;
+  align-self: center;
+  font-weight: 700;
+}
+
+
+.submit-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-weight: 700;
+  }
+}
+
+.correct-answer label {
+  background-color: #94D7A2 !important;
+  border: none;
+  /* Light green background */
+}
+
+.wrong-answer label {
+  background-color: #F8BCBC !important;
+  border: none;
+  /* Light red background */
+}
+
+.game-over label {
+  opacity: 0.5;
+}
