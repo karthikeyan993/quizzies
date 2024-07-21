@@ -67,15 +67,6 @@ export default function Question({
 
   const decodedQuestion = he.decode(data.question);
 
-  // function handleChange(event) {
-  //   console.log(event.target.id);
-  //   console.log(event.target.value);
-  //   setAnswers((prevAnswers) => ({
-  //     ...prevAnswers,
-  //     [event.target.id]: event.target.value,
-  //   }));
-  // }
-
   function handleChange(event) {
     setAnswers((prevAnswers) => {
       const newAnswers = [...prevAnswers];
